@@ -19,7 +19,7 @@ const function_utenti = (callback) => {
             const lista_utenti = JSON.parse(body);
 //creo un ciclo for che mi aggiunga alla stringa utenti ogni singolo users intervallato da <h1>
             for (let i = 0; i < lista_utenti.length; i++) {
-                utenti += '<h1>' + lista_utenti[i].name + '</h1>`;
+                utenti += '<h1>' + lista_utenti[i].name + '</h1>';
             }
 //avvio la callback mettendo come parametro la stringa utenti
             callback(utenti);
